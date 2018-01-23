@@ -30,7 +30,17 @@ def Comment():
     </head>
 
     <body>
-        {}
+        <table border = 1>
+         {% for text, date in comments.iteritems() %}
+         
+            <tr>
+               <th> {{ text }} </th>
+               <td> {{ date }} </td>
+            </tr>
+            
+         {% endfor %}}
+         </table>
+
     </body>
 
     </html>
